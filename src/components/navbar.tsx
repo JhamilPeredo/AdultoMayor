@@ -42,7 +42,7 @@ function NavItem({ children, href = "#", onClick }: NavItemProps) {
   );
 }
 
-export function Navbar(props: React.ComponentProps<typeof MTNavbar>) {
+export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
   const [open, setOpen] = React.useState(false);
   const [isScrolling, setIsScrolling] = React.useState(false);
   const pathname = usePathname();
@@ -77,12 +77,13 @@ export function Navbar(props: React.ComponentProps<typeof MTNavbar>) {
   }
 
   return (
-    <MTNavbar
+    <Navbar
       fullWidth
       shadow={false}
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
       className="fixed top-0 z-50 border-0"
+      placeholder=""
       {...props}
     >
       <div className="container mx-auto flex items-center justify-between">
@@ -182,7 +183,7 @@ export function Navbar(props: React.ComponentProps<typeof MTNavbar>) {
           </div>
         </div>
       </Collapse>
-    </MTNavbar>
+    </Navbar>
   );
 }
 

@@ -24,7 +24,7 @@ export default function NuestraEsenciaPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-2 text-blue-gray-700">Misión</h2>
             <p className="text-gray-700 leading-relaxed">
-             Somos el centro de Ancianos "Vida Feliz", que velamos por el bienestar físico, mental y espiritual de nuestros abuelitos, de las personas de la tercera edad.
+             Somos el centro de Ancianos Vida Feliz, que velamos por el bienestar físico, mental y espiritual de nuestros abuelitos, de las personas de la tercera edad.
              Nuestros pilares fundamentales son: el respeto, mutua cooperación,compasión y cuidado integral sirviendo a ancianitos (as) de diferentes etnias, religión y clase social.
             </p>
           </div>
@@ -42,7 +42,7 @@ export default function NuestraEsenciaPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-2 text-blue-gray-700">Visión</h2>
             <p className="text-gray-700 leading-relaxed">
-              El centro de Ancianos "Vida Feliz" llegará a ser una organizacion solcial al servicio y apoyo integral de las personas de la tercera edad, contribuyendo a una mejor calidad de vida en esta sociedad para que ellos vivan en integridad, justicia y amor.
+              El centro de Ancianos Vida Feliz llegará a ser una organizacion solcial al servicio y apoyo integral de las personas de la tercera edad, contribuyendo a una mejor calidad de vida en esta sociedad para que ellos vivan en integridad, justicia y amor.
             </p>
           </div>
         </div>
