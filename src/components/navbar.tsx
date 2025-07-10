@@ -84,6 +84,10 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
       color={isScrolling ? "white" : "transparent"}
       className="fixed top-0 z-50 border-0"
       placeholder=""
+      onResize={() => {}}
+      onResizeCapture={() => {}}
+      onPointerEnterCapture={undefined}
+      onPointerLeaveCapture={undefined}
       {...props}
     >
       <div className="container mx-auto flex items-center justify-between">
