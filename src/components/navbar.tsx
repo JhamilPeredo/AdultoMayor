@@ -77,7 +77,7 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
   }
 
   return (
-    <Navbar
+    <MTNavbar
       fullWidth
       shadow={false}
       blurred={false}
@@ -183,7 +183,7 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
           </div>
         </div>
       </Collapse>
-    </Navbar>
+    </MTNavbar>
   );
 }
 
