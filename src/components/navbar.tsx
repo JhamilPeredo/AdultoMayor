@@ -133,7 +133,7 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
           </SafeButton>
           <a href="http://facebook.com/centro.vidafeliz" target="_blank" rel="noreferrer">
             <SafeButton
-              color={isScrolling ? "gray" : "white"}
+              color={isScrolling ? "gray" : "blue"}
             >
               Facebook
             </SafeButton>
@@ -141,7 +141,7 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
         </div>
         <SafeIconButton
           variant="text"
-          color="white"
+          color="blue"
           onClick={() => setOpen(!open)}
           className="ml-auto inline-block lg:hidden"
         >
@@ -177,14 +177,7 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
             <NavItem href="/artesanias" onClick={() => setOpen(false)}>Artesanias</NavItem>
             <NavItem href="/huertos" onClick={() => setOpen(false)}>Huertos</NavItem>
           </ul>
-          <div className="mt-6 flex items-center gap-4">
-            <SafeButton variant="text" color="gray">
-              Log in
-            </SafeButton>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank" rel="noreferrer">
-              <SafeButton color="gray">Blocks</SafeButton>
-            </a>
-          </div>
+
         </div>
       </Collapse>
     </MTNavbar>
