@@ -124,7 +124,7 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
           <NavItem href="/artesanias" onClick={() => setOpen(false)}>Museo</NavItem>
           <NavItem href="/huertos" onClick={() => setOpen(false)}>Huertos</NavItem>
         </ul>
-        <div className="hidden items-center lg:flex gap-2">
+        <div className="flex items-center gap-2">
           <SafeButton
             variant="text"
             color={isScrolling ? "gray" : "white"}
