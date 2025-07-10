@@ -8,17 +8,17 @@ import BlogPostCard from "@/components/blog-post-card";
 
 const BLOG_POSTS = [
   {
-    img: "/image/blogs/blog-1.png",
+    img: "/image/imagen9.jpg",
     title: "Qué Hacemos",
     desc: `hola`,
   },
   {
-    img: "/image/blogs/blog-2.png",
+    img: "/image/imagen12.jpg",
     title: "Qué Necesitamos",
     desc: `hola`,
   },
   {
-    img: "/image/blogs/blog-3.png",
+    img: "/image/imagen14.jpg",
     title: "Cómo Puedes Ayudar",
     desc: `hola`,
   },
