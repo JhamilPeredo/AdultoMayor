@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { Navbar, Footer } from "@/components";
+import { Navbar, Footer ,FixedPlugin} from "@/components";
 
 import Hero from "./hero";
 import LatestBlogPosts from "./latest-blog-posts";
@@ -28,6 +28,7 @@ export default function HomePage() {
       <Hero />
       <LatestBlogPosts />
       <ContactForm />
+       <FixedPlugin />
       <Footer />
     </>
   );

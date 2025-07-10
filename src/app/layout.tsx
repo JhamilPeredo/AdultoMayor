@@ -1,10 +1,13 @@
 
+
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { Layout, FixedPlugin } from "@/components";
+//import { Layout, FixedPlugin } from "@/components";
 import { ThemeProvider } from "@material-tailwind/react";
-
+import { ClientThemeProvider } from "@/components/ClientThemeProvider"; // <- nuevo
+import { FixedPlugin } from "@/components"; // si esto también es cliente, muévelo dentro
+import ClientWrapper from "@/components/ClientWrapper"; 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "900"],
@@ -33,12 +36,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
       <body className={roboto.className}>
-        <ThemeProvider>
-        <Layout>
-          {children}
-          <FixedPlugin />
-        </Layout>
-        </ThemeProvider>
+        <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>
   );
