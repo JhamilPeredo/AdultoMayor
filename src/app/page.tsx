@@ -12,15 +12,17 @@ export default function HomePage() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (searchParams.get("scroll") === "inicio") {
-      const target = document.querySelector("#inicio");
-      if (target) {
-        setTimeout(() => {
-          target.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      }
+  const scrollFlag = sessionStorage.getItem("scrollToInicio");
+  if (scrollFlag === "true") {
+    sessionStorage.removeItem("scrollToInicio");
+    const target = document.querySelector("#inicio");
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: "smooth" });
+      }, 100);
     }
-  }, [searchParams]);
+  }
+}, []);
 
   return (
     <>

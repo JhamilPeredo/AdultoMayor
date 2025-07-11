@@ -1,9 +1,9 @@
-// app/artesanias/page.tsx
+
 import React from "react";
 import Image from "next/image";
 import { Navbar, Footer } from "@/components";
 
-export default function ArtesaniasPage() {
+export default function MuseoPage() {
   return (
     <>
       <Navbar />

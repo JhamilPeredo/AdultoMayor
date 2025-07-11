@@ -64,16 +64,16 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
   }, []);
 
   function handleClickConocenos() {
-    if (pathname === "/") {
-      // Ya en home: solo scroll
-      const target = document.querySelector("#inicio");
-      if (target) target.scrollIntoView({ behavior: "smooth" });
-    } else {
-      // No en home: navega con query para hacer scroll luego
-      router.push("/?scroll=inicio");
-    }
-    setOpen(false);
+  if (pathname === "/") {
+    const target = document.querySelector("#inicio");
+    if (target) target.scrollIntoView({ behavior: "smooth" });
+  } else {
+    // Usar sessionStorage como flag temporal
+    sessionStorage.setItem("scrollToInicio", "true");
+    router.push("/"); 
   }
+  setOpen(false);
+}
 
   return (
     <MTNavbar
@@ -120,7 +120,7 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
             </a>
           </li>
           <NavItem href="/nuestra-esencia" onClick={() => setOpen(false)}>Nuestra Esencia</NavItem>
-          <NavItem href="/artesanias" onClick={() => setOpen(false)}>Museo</NavItem>
+          <NavItem href="/museo" onClick={() => setOpen(false)}>Museo</NavItem>
           <NavItem href="/huertos" onClick={() => setOpen(false)}>Huertos</NavItem>
         </ul>
         <div className="hidden lg:flex items-center gap-2">
@@ -173,7 +173,7 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
               </a>
             </li>
             <NavItem href="/nuestra-esencia" onClick={() => setOpen(false)}>Nuestra Esencia</NavItem>
-            <NavItem href="/artesanias" onClick={() => setOpen(false)}>Museo</NavItem>
+            <NavItem href="/museo" onClick={() => setOpen(false)}>Museo</NavItem>
             <NavItem href="/huertos" onClick={() => setOpen(false)}>Huertos</NavItem>
           <li>
          <SafeButton
