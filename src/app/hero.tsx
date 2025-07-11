@@ -37,9 +37,7 @@ function Hero() {
             </SafeTypography>
 
             <SafeTypography variant="lead" className="text-gray-700 mt-6">
-              Somos un espacio de amor, cuidado y comunidad para adultos mayores.
-              Aquí encuentran un segundo hogar donde se sienten acompañados,
-              valorados y activos.
+              En el Centro de Ancianos Vida Feliz, somos un espacio de afecto, respeto y comunidad dedicado al bienestar integral de los adultos mayores. Aquí encuentran un segundo hogar, donde cada persona es valorada, escuchada y acompañada. Promovemos un entorno activo, seguro y lleno de oportunidades para compartir historias, talentos y alegrías. Nuestro compromiso es cultivar vínculos intergeneracionales y brindar una vida plena, con dignidad y propósito.
             </SafeTypography>
           </div>
         </div> 

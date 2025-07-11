@@ -10,17 +10,17 @@ const BLOG_POSTS = [
   {
     img: "/image/imagen9.jpg",
     title: "Qué Hacemos",
-    desc: `hola`,
+    desc: `Promovemos el bienestar integral de nuestros adultos mayores mediante espacios seguros, atención dedicada y actividades significativas. Cada día es una nueva oportunidad para compartir experiencias con alegría, respeto y humanidad profunda.`,
   },
   {
     img: "/image/imagen12.jpg",
     title: "Qué Necesitamos",
-    desc: `hola`,
+    desc: `Necesitamos manos comprometidas, recursos sostenibles y apoyo solidario que fortalezcan nuestros programas. Tu colaboración permite crear entornos activos que enriquecen la vida de nuestros adultos mayores con propósito y amor.`,
   },
   {
     img: "/image/imagen14.jpg",
     title: "Cómo Puedes Ayudar",
-    desc: `hola`,
+    desc: `Puedes apoyar siendo voluntario, realizando donaciones o difundiendo nuestra labor. Cada gesto transforma el presente, mejora el entorno y enriquece la vida de nuestros adultos mayores con dignidad y esperanza.`,
   },
 ];
 

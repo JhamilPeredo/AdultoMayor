@@ -15,7 +15,7 @@ export default function ArtesaniasPage() {
         <p className="mb-10 text-center text-gray-700 max-w-3xl mx-auto">
           El Museo de los Adultos Mayores es un espacio vivo de encuentro, memoria y dignidad. Aquí, cada objeto, 
           fotografía y relato es una ventana al pasado y una celebración del presente. Este museo no solo conserva
-          la historia: la honra, la comparte y la transforma en aprendizaje para las nuevas generaciones
+          la historia: la honra, la comparte y la transforma en aprendizaje para las nuevas generaciones.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -29,8 +29,8 @@ export default function ArtesaniasPage() {
               className="w-full h-60 object-cover"
             />
             <div className="p-4">
-              <h2 className="font-semibold text-lg text-blue-gray-800">Auto Antiguo</h2>
-              <p className="text-sm text-gray-600">auto exotico.</p>
+              <h2 className="font-semibold text-lg text-blue-gray-800">Ruedas del recuerdo</h2>
+              <p className="text-sm text-gray-600">Este vehículo centenario, ubicado en el jardín del Centro de Ancianos Vida Feliz, simboliza la transición entre los carruajes tradicionales y los primeros automóviles motorizados. Su presencia evoca historia y asombro intergeneracional. </p>
             </div>
           </div>
 
@@ -44,8 +44,8 @@ export default function ArtesaniasPage() {
               className="w-full h-60 object-cover"
             />
             <div className="p-4">
-              <h2 className="font-semibold text-lg text-blue-gray-800">Campeon</h2>
-              <p className="text-sm text-gray-600">campeon de multiples trofeos.</p>
+              <h2 className="font-semibold text-lg text-blue-gray-800">Campeón en múltiples disciplinas</h2>
+              <p className="text-sm text-gray-600">Orgullo del Centro de Ancianos Vida Feliz, este residente ha conquistado trofeos en diversas disciplinas deportivas. Su constancia y espíritu competitivo motivan a quienes lo rodean y reflejan una vida dedicada al esfuerzo y la pasión</p>
             </div>
           </div>
 
@@ -59,8 +59,8 @@ export default function ArtesaniasPage() {
               className="w-full h-60 object-cover"
             />
             <div className="p-4">
-              <h2 className="font-semibold text-lg text-blue-gray-800">Recuerdos</h2>
-              <p className="text-sm text-gray-600">Fotos de los recuerdos.</p>
+              <h2 className="font-semibold text-lg text-blue-gray-800">Memoria en vitrina</h2>
+              <p className="text-sm text-gray-600">Una selección íntima de objetos y fotografías preservadas con cariño en el museo del Centro de Ancianos Vida Feliz. Radios, sombreros y retratos componen un mosaico de recuerdos que conectan generaciones con emoción.</p>
             </div>
           </div>
         </div>
