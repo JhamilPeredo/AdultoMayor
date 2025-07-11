@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { Navbar as MTNavbar, Collapse } from "@material-tailwind/react";
 import { SafeButton, SafeTypography, SafeIconButton } from "@/components/SafeMaterial";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -124,12 +125,14 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
           <NavItem href="/huertos" onClick={() => setOpen(false)}>Huertos</NavItem>
         </ul>
         <div className="hidden lg:flex items-center gap-2">
+         <Link href="/voluntariados">
           <SafeButton
             variant="text"
             color={isScrolling ? "gray" : "white"}
           >
             Voluntariados
           </SafeButton>
+          </Link>
           <a href="http://facebook.com/centro.vidafeliz" target="_blank" rel="noreferrer">
             <SafeButton
               color={isScrolling ? "gray" : "blue"}
@@ -175,7 +178,9 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
             <NavItem href="/nuestra-esencia" onClick={() => setOpen(false)}>Nuestra Esencia</NavItem>
             <NavItem href="/museo" onClick={() => setOpen(false)}>Museo</NavItem>
             <NavItem href="/huertos" onClick={() => setOpen(false)}>Huertos</NavItem>
+
           <li>
+          <Link href="/voluntariados">
          <SafeButton
           fullWidth
           variant="outlined"
@@ -184,12 +189,14 @@ export function Navbar(props: Partial<React.ComponentProps<typeof MTNavbar>>) {
         >
           Voluntariados
         </SafeButton>
+        </Link>
         </li>
          <li>
         <a href="http://facebook.com/centro.vidafeliz" target="_blank" rel="noreferrer">
           <SafeButton fullWidth color="blue" onClick={() => setOpen(false)}>
             Facebook
           </SafeButton>
+          
         </a>
          </li>
           </ul>
